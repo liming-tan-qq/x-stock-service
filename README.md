@@ -30,7 +30,7 @@ flowchart LR
 
 ### Continuous Integration
 
-- Workflow: https://github.com/liming-tan-qq/x-stock-service/actions/runs
+- Workflow: https://github.com/liming-tan-qq/x-stock-service/actions
 
 ### Test Coverage
 
