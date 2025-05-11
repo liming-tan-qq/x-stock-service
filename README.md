@@ -26,13 +26,13 @@ flowchart LR
 
 ### Build
 
-- mvn clean install
+- [mvn clean install](https://github.com/liming-tan-qq/x-stock-service/blob/main/.github/workflows/maven.yml#L30-L31)
 
 ### Continuous Integration
 
-- Workflow: https://github.com/liming-tan-qq/x-stock-service/actions
+- [Java CI with Maven](https://github.com/liming-tan-qq/x-stock-service/actions)
 
 ### Test Coverage
 
-- Jacoco Plugin: https://github.com/liming-tan-qq/x-stock-service/blob/main/pom.xml#L34-L57
-- Example Report: https://github.com/liming-tan-qq/x-stock-service/actions/runs/14953455062#summary-42005924749
+- [Jacoco Plugin](https://github.com/liming-tan-qq/x-stock-service/blob/main/pom.xml#L34-L57)
+- [Example Report](https://github.com/liming-tan-qq/x-stock-service/actions/runs/14960422276)
