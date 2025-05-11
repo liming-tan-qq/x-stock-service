@@ -30,17 +30,17 @@ public class SubServiceImplTest {
     Symbol sD = new Symbol("D");
 
     // --------------------------------------
-    private ClientId c1 = new ClientId("c1");
+    private final ClientId c1 = new ClientId("c1");
     @Mock private StockListener stockListener1A;
     @Mock private StockListener stockListener1B;
 
     // --------------------------------------
-    private ClientId c2 = new ClientId("c2");
+    private final ClientId c2 = new ClientId("c2");
     @Mock private StockListener stockListener2B;
     @Mock private StockListener stockListener2C;
 
     // --------------------------------------
-    private ClientId c3 = new ClientId("c3");
+    private final ClientId c3 = new ClientId("c3");
     @Mock private StockListener stockListener3D;
 
     private NasdaqNaive nasdaqNaive;

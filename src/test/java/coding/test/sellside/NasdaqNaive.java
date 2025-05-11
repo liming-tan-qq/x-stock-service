@@ -10,7 +10,7 @@ import java.util.List;
 
 public class NasdaqNaive implements Nasdaq {
 
-    private final List<StockListener> stockListeners;
+    private List<StockListener> stockListeners;
 
     public NasdaqNaive() {
 
@@ -37,6 +37,16 @@ public class NasdaqNaive implements Nasdaq {
     @Override
     public void unsubscribe(Symbol symbol) {
 
-        throw new UnsupportedOperationException();
+        List<StockListener> newList = new ArrayList<>();
+
+        for (StockListener listener : stockListeners) {
+
+            if (!symbol.equals(listener.getSymbol())) {
+
+                newList.add(listener);
+            }
+        }
+
+        stockListeners = newList;
     }
 }

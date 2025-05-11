@@ -41,6 +41,7 @@ public class Client {
     public void stop() {
 
         subService.disconnect(clientId);
+        stocksLocalCache.clear();
     }
 
     public Stock getStock(Symbol symbol) {

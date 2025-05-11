@@ -84,6 +84,7 @@ public class SubServiceImpl implements SubService {
 
                 listenersBySymbol.remove(symbol);
                 nasdaq.unsubscribe(symbol);
+                stocksLocalCache.remove(symbol);
             }
         }
 
