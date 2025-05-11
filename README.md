@@ -1,6 +1,6 @@
-# stock-service
+# Stock Service
 
-The below problem statement was given ...
+### Problem Statement
 
 - Nasdaq is the upstream data source where the sell side subscription service should subscribe to.
 - Client should 'connect' to subscription service with the target list of stocks symbols.
@@ -16,9 +16,23 @@ flowchart LR
     SellSide("SellSide: <br>SubService: <br>[A, B, C, D]") <--> Nasdaq("Nasdaq: <br>[A, B, C, D, E, F]")
 
 ```
-Focus on ...
+
+### Focus on
 
 - Service contracts (POJO)
 - Services
 - Test Coverage
 - Concurrency
+
+### Build
+
+- mvn clean install
+
+### Continuous Integration
+
+- Workflow: https://github.com/liming-tan-qq/x-stock-service/actions/runs
+
+### Test Coverage
+
+- Jacoco Plugin: https://github.com/liming-tan-qq/x-stock-service/blob/main/pom.xml#L34-L57
+- Example Report: https://github.com/liming-tan-qq/x-stock-service/actions/runs/14953455062#summary-42005924749
