@@ -34,12 +34,4 @@ public class Stock {
         Stock stock = (Stock) o;
         return Objects.equals(getSymbol(), stock.getSymbol()) && Objects.equals(getData(), stock.getData()) && Objects.equals(getUpdatedAt(), stock.getUpdatedAt());
     }
-
-    @Override
-    public int hashCode() {
-        int result = Objects.hashCode(getSymbol());
-        result = 31 * result + Objects.hashCode(getData());
-        result = 31 * result + Objects.hashCode(getUpdatedAt());
-        return result;
-    }
 }

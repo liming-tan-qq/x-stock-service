@@ -30,11 +30,4 @@ public class Data {
         Data data = (Data) o;
         return Objects.equals(getPrice(), data.getPrice()) && Objects.equals(getQuantity(), data.getQuantity());
     }
-
-    @Override
-    public int hashCode() {
-        int result = Objects.hashCode(getPrice());
-        result = 31 * result + Objects.hashCode(getQuantity());
-        return result;
-    }
 }

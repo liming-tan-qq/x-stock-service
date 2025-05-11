@@ -29,7 +29,7 @@ public class SubServiceImpl implements SubService {
     }
 
     @Override
-    public void connect(ClientId clientId, List<StockListener> stockListeners) {
+    public synchronized void connect(ClientId clientId, List<StockListener> stockListeners) {
 
         for (StockListener stockListener : stockListeners) {
 
@@ -72,7 +72,7 @@ public class SubServiceImpl implements SubService {
     }
 
     @Override
-    public void disconnect(ClientId clientId) {
+    public synchronized void disconnect(ClientId clientId) {
 
         for (StockListener listener : listenersByClientId.get(clientId)) {
 
